@@ -1,4 +1,4 @@
-package Domain.dto;
+package Domain.dto.medical;
 
 import java.util.List;
 

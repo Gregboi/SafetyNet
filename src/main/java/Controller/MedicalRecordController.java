@@ -1,9 +1,8 @@
 package Controller;
 
 import Domain.MedicalRecords;
-import Domain.dto.ChildAlertDto;
-import Domain.dto.IdentityDto;
-import Domain.dto.PersonMedicalDto;
+import Domain.dto.person.ChildAlertDto;
+import Domain.dto.medical.PersonMedicalDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

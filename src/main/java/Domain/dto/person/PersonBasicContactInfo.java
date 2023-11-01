@@ -1,21 +1,15 @@
-package Domain.dto;
+package Domain.dto.person;
 
-import Domain.FireStation;
-import Domain.MedicalRecords;
-import Domain.Person;
-
-import java.util.List;
-
-public class IdentityDto {
+public class PersonBasicContactInfo {
     private String firstName;
     private String lastName;
     private String address;
     private String phone;
 
-    public IdentityDto() {
+    public PersonBasicContactInfo() {
     }
 
-    public IdentityDto(String firstName, String lastName, String address, String phone) {
+    public PersonBasicContactInfo(String firstName, String lastName, String address, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;

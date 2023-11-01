@@ -1,4 +1,6 @@
-package Domain.dto;
+package Domain.dto.firestation;
+
+import Domain.dto.medical.PersonMedicalDto;
 
 public class FireStationDto {
     private String address;

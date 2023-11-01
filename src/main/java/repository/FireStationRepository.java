@@ -4,10 +4,10 @@ import Domain.Index;
 import Domain.FireStation;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class FireStationRepository {
@@ -64,6 +64,12 @@ public class FireStationRepository {
         }
 
         return !found;
+    }
+
+    public int getAge(Date birthDay) {
+        LocalDate birthday = birthDay.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        LocalDate currentDate = LocalDate.now();
+        return Period.between(birthday, currentDate).getYears();
     }
 
     /*** Update a station number for an address. @return true if updated successfully, or false if failed.*/

@@ -1,4 +1,4 @@
-package Domain.dto;
+package Domain.dto.person;
 
 public class AgeDto {
     private String firstName;

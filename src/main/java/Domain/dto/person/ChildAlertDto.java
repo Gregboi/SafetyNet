@@ -1,4 +1,4 @@
-package Domain.dto;
+package Domain.dto.person;
 
 import Domain.Person;
 import com.fasterxml.jackson.annotation.JsonInclude;

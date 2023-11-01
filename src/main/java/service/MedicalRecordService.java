@@ -1,9 +1,10 @@
 package service;
 
-import Domain.FireStation;
-import Domain.dto.*;
 import Domain.MedicalRecords;
 import Domain.Person;
+import Domain.dto.medical.PersonMedicalDto;
+import Domain.dto.person.AgeDto;
+import Domain.dto.person.ChildAlertDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.FireStationRepository;
 import repository.MedicalRecordRepository;
